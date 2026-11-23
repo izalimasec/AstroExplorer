@@ -1,20 +1,31 @@
-print("================================")
-print("       ASTROEXPLORER")
-print("================================")
+def apresentar_menu():
+    print("================================")
+    print("       ASTROEXPLORER")
+    print("================================")
+    print("Bem-vinda ao observatório digital!")
+    print()
 
-print("Bem-vinda ao observatório digital!")
-print()
+    print("1 - Sobre o AstroExplorer")
+    print("2 - Sair")
 
-print("1 - Sobre o AstroExplorer")
-print("2 - Sair")
 
-opcao = input("Escolha uma opção: ")
-
-if opcao == "1":
+def mostrar_sobre():
     print("O AstroExplorer é um projeto de exploração astronômica.")
 
-elif opcao == "2":
-    print("Até a próxima exploração!")
 
-else:
-    print("Opção inválida.")
+def iniciar():
+    apresentar_menu()
+
+    opcao = input("Escolha uma opção: ")
+
+    if opcao == "1":
+        mostrar_sobre()
+
+    elif opcao == "2":
+        print("Até a próxima exploração!")
+
+    else:
+        print("Opção inválida.")
+
+
+iniciar()
